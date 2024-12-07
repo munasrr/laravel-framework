@@ -8,3 +8,5 @@ Route::get('/', function () {
 });
 
 Route::get('/classlist', [ClassController::class, 'classlist']);
+
+Route::post('/add-class', [ClassController::class, 'store']);//store data
