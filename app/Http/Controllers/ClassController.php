@@ -10,6 +10,9 @@ class ClassController extends Controller
  public function classlist()
  {
    $data=Classes::all();
-   dd($data);
+//    dd($data);
+  return view ('index',
+   ['data' => $data] 
+);
  }
 }
