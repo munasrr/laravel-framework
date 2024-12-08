@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('class_name');
             $table->decimal('class_fee', 18, 2);
             $table->enum('status', ['Active', 'Deactive', 'Graduated'])->default('Active');
+             $table->softDeletes();//handle the deletion of records
             $table->timestamps();
         });
     }

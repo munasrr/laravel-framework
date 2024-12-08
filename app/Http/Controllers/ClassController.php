@@ -34,4 +34,17 @@ class ClassController extends Controller
         // Redirect back with a success message
         return redirect()->back()->with('success', 'Class added successfully!');
     }
+    // Method to delete a class by ID
+public function destroy($id)
+{
+    // Find the class by ID or fail
+    $class = Classes::findOrFail($id);
+
+    // Delete the class
+    $class->delete();
+
+    // Redirect back with a success message
+    return redirect()->back()->with('success', 'Class deleted successfully!');
+}
+
 }
