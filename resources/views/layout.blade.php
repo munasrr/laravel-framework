@@ -108,7 +108,7 @@
                 </nav>
             </div>
             <div id="layoutSidenav_content">
-                @yield('content')
+                @yield('content')//mainkaqad
                 
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
